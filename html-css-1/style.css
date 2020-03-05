@@ -1,7 +1,9 @@
 *{
     font-family: sans-serif;
 }
-
+html {
+    min-width: 200px;
+}
 
 .nav-main {
     width:100%;
@@ -10,5 +12,7 @@
     color:white;
 }
 .nav-main a:visited{
-    color:whitesmoke;
+    color:white;
+}
+.nav-main .nav-main__logo-text{
 }

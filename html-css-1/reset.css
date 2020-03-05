@@ -21,6 +21,7 @@ nav ul li a {
 }
 .nav-main h1 {
     margin:0 ;
+    font-weight: normal;
 }
 .nav-main .nav-main__nav-links ul {
     margin:0;
