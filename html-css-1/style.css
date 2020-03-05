@@ -10,9 +10,24 @@ html {
     background-color: rgb(122, 122, 122);
     padding-left: 2em;
     color:white;
+    overflow: unset;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
 }
 .nav-main a:visited{
     color:white;
 }
-.nav-main .nav-main__logo-text{
+.nav-main .nav-main__logo-text, 
+.nav-main .nav-main__nav-links{
+    float: none;
+    margin-top:0;
+    margin-bottom: 0;
+}
+
+.nav-main .nav-main__nav-links::after {
+    content:none;
+    clear: none;
+    display: none;
 }
