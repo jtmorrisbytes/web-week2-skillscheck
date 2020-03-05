@@ -4,47 +4,57 @@
    works on older browsers when possible, progressively
    enhancing them with newer features
  */
- /* default styles */
- header, main, nav, section {
-     display: block;
- }
-
- /* custom polyfills. */
- .nav-main {
-    overflow:hidden;
+/* default styles */
+header,
+main,
+nav,
+section {
+  display: block;
 }
 
- .nav-main .nav-main__logo-text {
-     float: left;
- }
- .nav-main .nav-main__nav-links{
-    /* border: 1px solid black; */
-    float:right;
-
-    width: 340px;
-    width: 18em;
- }
-.nav-main .nav-main__nav-links li{
-    display:inline-block;
-    margin-right: 10%;
-    /* height: 1px; */
-    /* content:""; */
+/* custom polyfills. */
+.nav-main {
+  overflow: hidden;
 }
-.nav-main .nav-main__nav-links::after{
-    clear:both;
-    content:"";
-    display:table;
-    /* overflow:hidden; */
+
+.nav-main .nav-main__logo-text {
+  float: left;
+}
+.nav-main .nav-main__nav-links {
+  /* border: 1px solid black; */
+  float: right;
+
+  width: 340px;
+  width: 18em;
+}
+.nav-main .nav-main__nav-links li {
+  display: inline-block;
+  margin-right: 10%;
+  /* height: 1px; */
+  /* content:""; */
+}
+.nav-main .nav-main__nav-links::after {
+  clear: both;
+  content: "";
+  display: table;
+  /* overflow:hidden; */
 }
 .nav-main h1 {
-    margin-top: 0.43rem;
-    margin-bottom: 0.43rem;
+  margin-top: 0.43rem;
+  margin-bottom: 0.43rem;
 }
 .nav-main .nav-main__nav-links ul {
-    margin-top: 1rem;
-    margin-bottom: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
-body > main > section.jumbotron h2.jumbotron__text {
+body > main > section.jumbotron {
+  height: 20em;
+}
 
-    
+body > main > section.jumbotron {
+  padding-top: 7.5em;
+  padding-left: 2%;
+}
+.content-container .container {
+
 }

@@ -44,13 +44,29 @@ body > main {
 
 }
 body > main > section.jumbotron {
-    height: 25em;
+    height: 20em;
+    padding:0;
     background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 body > main > section.jumbotron h2.jumbotron__text {
+ padding:0;
  margin:0;
  color: rgb(223,224,95);
- font-size: 4em;
+ font-size: 6em;
  font-weight: normal;
  font-family: 'Piston Pressure','Courier New', Courier, monospace;
+ text-align: center;
+}
+
+.content-container{
+    padding:3em;
+}
+.box {
+    display: inline-block;
+    width: 12em;
+    height: 12em;
+    background-color: rgb(164, 255, 215);
 }
