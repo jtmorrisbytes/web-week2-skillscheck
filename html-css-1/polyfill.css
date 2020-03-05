@@ -1,0 +1,6 @@
+/* this sylesheet is for older browsers that may
+   not support flexbox.
+   its good practice to start with a layout that
+   works on older browsers, progressively
+   enhancing them with newer features
+ */
