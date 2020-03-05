@@ -5,7 +5,7 @@
    enhancing them with newer features
  */
  /* default styles */
- header, main, nav {
+ header, main, nav, section {
      display: block;
  }
 
@@ -43,4 +43,8 @@
 .nav-main .nav-main__nav-links ul {
     margin-top: 1rem;
     margin-bottom: 1rem;
+}
+body > main > section.jumbotron h2.jumbotron__text {
+
+    
 }

@@ -5,6 +5,12 @@ html {
     min-width: 200px;
 }
 
+@font-face {
+    font-family: "Piston Pressure";
+    src: url("./fonts/Piston_Pressure.otf")
+}
+
+
 .nav-main {
     width:100%;
     background-color: rgb(122, 122, 122);
@@ -14,7 +20,7 @@ html {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 50px;
+    height: 3.125em;
 }
 .nav-main a:visited{
     color:white;
@@ -30,4 +36,21 @@ html {
     content:none;
     clear: none;
     display: none;
+}
+
+body > main {
+    height: calc(100vh - 3.125em);
+    overflow:auto;
+
+}
+body > main > section.jumbotron {
+    height: 25em;
+    background-color: black;
+}
+body > main > section.jumbotron h2.jumbotron__text {
+ margin:0;
+ color: rgb(223,224,95);
+ font-size: 4em;
+ font-weight: normal;
+ font-family: 'Piston Pressure','Courier New', Courier, monospace;
 }
