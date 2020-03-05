@@ -1,6 +1,38 @@
 /* this sylesheet is for older browsers that may
    not support flexbox.
    its good practice to start with a layout that
-   works on older browsers, progressively
+   works on older browsers when possible, progressively
    enhancing them with newer features
  */
+ /* default styles */
+ header, main, nav {
+     display: block;
+ }
+
+ /* custom polyfills. */
+ .nav-main {
+    overflow:hidden;
+}
+
+ .nav-main .nav-main__logo-text {
+     float: left;
+ }
+ .nav-main .nav-main__nav-links{
+    border: 1px solid black;
+    float:right;
+
+    width: 340px;
+    width: 15em;
+ }
+.nav-main .nav-main__nav-links li{
+    display:inline-block;
+    width: 500000px;
+    height: 1px;
+    content:"";
+}
+.nav-main .nav-main__nav-links::after{
+    clear:both;
+    content:"";
+    display:table;
+    /* overflow:hidden; */
+}

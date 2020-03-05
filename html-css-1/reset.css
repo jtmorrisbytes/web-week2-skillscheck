@@ -1,0 +1,27 @@
+/* reset stylesheet: making everthing look similar across browsers */
+* {
+    box-sizing: border-box;
+}
+html {
+    font-size: 100%;
+}
+body {
+    margin:0;
+    padding:0;
+}
+
+nav ul li {
+    list-style-type: none;
+    display: inline-block;
+}
+nav ul li a {
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+}
+.nav-main h1 {
+    margin:0 ;
+}
+.nav-main .nav-main__nav-links ul {
+    margin:0;
+}

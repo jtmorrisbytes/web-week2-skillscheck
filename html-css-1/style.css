@@ -1,0 +1,12 @@
+.nav-main {
+    width:100%;
+    background-color: rgb(122, 122, 122);
+}
+.nav-main h1 {
+    margin-top: 0.25rem;
+    margin-bottom: 0.25rem;
+}
+.nav-main .nav-main__nav-links ul {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
