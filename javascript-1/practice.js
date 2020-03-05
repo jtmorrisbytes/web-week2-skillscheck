@@ -56,29 +56,42 @@ function iLove(name, love){
 const faveColors = ['red', 'green', 'black']
 
 //Code Here
-
+let colorCopy = faveColors.slice()
 //////////////////PROBLEM 9////////////////////
 
 // Add a fourth color to the end of the 'colorCopy' array using push.
 
 //Code Here
-
+colorCopy.push("orange")
 //////////////////PROBLEM 10////////////////////
 
 // Create a new array called 'middleNums' from the numbers array that will capture only the middle numbers (2, 3, 4).
 const numbers = [1, 2, 3, 4, 5]
 
 //Code Here
-
+let middleNums = numbers.slice(1,numbers.length - 1)
 //////////////////PROBLEM 11////////////////////
 
-// Create an object called 'me' that has the following keys: firstName, state, age, and greeter. The value of the firstName key should be your name as a string. The value of the property state should be your current state or providence of residence as a string. The value of age should be your age as a number. greeter should be a method that returns the string 'Hello! My name is NAMEVALUE and I live in STATEVALUE' with the corresponding values. 
+// Create an object called 'me' that has the following keys: firstName, state, age, and greeter. The value of the firstName key should be your name as a string.
+// The value of the property state should be your current state or providence of residence as a string. The value of age should be your age as a number. greeter
+//should be a method that returns the string 'Hello! My name is NAMEVALUE and I live in STATEVALUE' with the corresponding values. 
 
 //Code Here
 
+let me = {
+	firstName:"Jordan",
+	state:"TX",
+	age:25,
+	greeter:""
+}
+me.greeter = ()=>`Hello! My name is ${me.firstName}, and I live in ${me.state}`
+
+
 //////////////////PROBLEM 12////////////////////
 
-// Create a function called 'bigOrSmall' that takes in one parameter, 'arr', which will be an array of numbers. Inside of the bigOrSmall function, create a new array called 'answers'. Then, loop over the passed in arr parameter, and check to see if the number in the array is GREATER than 100. If it is, push 'big' as a string to the answers array. If the number is LESS than or EQUAL to 100, push 'small' as a string to the answers array. Return the answers array inside of the function.
+// Create a function called 'bigOrSmall' that takes in one parameter, 'arr', which will be an array of numbers. Inside of the bigOrSmall function, create a new array called 'answers'.
+// Then, loop over the passed in arr parameter, and check to see if the number in the array is GREATER than 100. If it is, push 'big' as a string to the answers array. If the number 
+// is LESS than or EQUAL to 100, push 'small' as a string to the answers array. Return the answers array inside of the function.
 
 // Code here
 
