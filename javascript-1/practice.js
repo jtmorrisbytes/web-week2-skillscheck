@@ -94,13 +94,25 @@ me.greeter = ()=>`Hello! My name is ${me.firstName}, and I live in ${me.state}`
 // is LESS than or EQUAL to 100, push 'small' as a string to the answers array. Return the answers array inside of the function.
 
 // Code here
-
+function bigOrSmall(arr) {
+	let answers = [];
+	for (let i = 0; i < arr.length; i++) {
+		arr[i] <= 100? answers.push("small"): answers.push("big");
+	}
+	return answers;
+}
 //////////////////PROBLEM 13////////////////////
 
 // Create a function called 'arrayReverser' that takes in one parameter, 'arr'. Inside of arrayReverser, create an empty array called 'reversed'. Using a for loop, loop over the passed in array IN REVERSE (this means your counter should decrement), and then add each item to the 'reversed' array variable you created. Finally, return the 'reversed' array variable. 
 
 //Code Here
-
+function arrayReverser(arr){
+	let reversed = [];
+	for( let index = arr.length - 1; index >= 0; index--) {
+		reversed.push(arr[index])
+	}
+	return reversed
+}
 //////////////////PROBLEM 14 - 18 Setup////////////////////
 
 // Below is an array, myNumbers. You will be using .map, .filter, .reduce and .forEach to manipulate the array in the following problems.
@@ -112,32 +124,35 @@ const myNumbers = [3, 55, 788, 2, 1]
 // First, use .map to create a new array that doubles each number. Call the new array 'doubled'.
 
 // Code Here
-
+let doubled =  myNumbers.map((num)=>num * 2)
 //////////////////PROBLEM 15////////////////////
 
 // Now, use .filter to create a new array containing any numbers that are greater than 100. Call the new array 'filtered'. 
 
 // Code Here
-
+let filtered = myNumbers.filter(number => number > 100)
 //////////////////PROBLEM 16////////////////////
 
 // Next, use reduce to get the total of the numbers in the array summed together. Store the total in a new variable named 'total'. 
 
 // Code Here
-
+let total = myNumbers.reduce((acc, number) => {return acc+number},0)
 //////////////////PROBLEM 17////////////////////
 
 // Finally, use .forEach to find the index of each item in the array. To begin, create an empty array called 'myNumbersIndex'. Then, use forEach to push each item's index from the myNumbers array into the newly created myNumbersIndex array. 
 
 // Code Here
-
+let myNumbersIndex = []
+myNumbers.forEach((number, index)=>{
+	myNumbersIndex.push(index)
+})
 //////////////////PROBLEM 18////////////////////
 
 // Did you know that George Foreman has five sons named George? Go ahead and change everyone's name in the notGeorge array to George using .map. Store the resulting array in a variable named 'forTheLoveOfGeorge'.
 const notGeorge = ['Louis', 'Ted', 'Bill', 'Sharon', 'Mark', 'Angela']
 
 // Code Here
-
+const forTheLoveOfGeorge = notGeorge.map(() => "George")
 //////////////////PROBLEM 19////////////////////
 
 // Using the people array, filter out everyone that isn't a friend into a new array called 'enemies'. Use .filter(). 
@@ -151,7 +166,7 @@ const people = [
 ]
 
 // Code Here
-
+let enemies = people.filter(person => !person.friend)
 //////////////////PROBLEM 20////////////////////
 
 // Using the people array above, get a total of the awesomeLevel from all the people, and store that value in a variable named 'totallyAwesome'. Use .reduce().
