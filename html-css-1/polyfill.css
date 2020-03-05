@@ -18,21 +18,29 @@
      float: left;
  }
  .nav-main .nav-main__nav-links{
-    border: 1px solid black;
+    /* border: 1px solid black; */
     float:right;
 
     width: 340px;
-    width: 15em;
+    width: 18em;
  }
 .nav-main .nav-main__nav-links li{
     display:inline-block;
-    width: 500000px;
-    height: 1px;
-    content:"";
+    margin-right: 10%;
+    /* height: 1px; */
+    /* content:""; */
 }
 .nav-main .nav-main__nav-links::after{
     clear:both;
     content:"";
     display:table;
     /* overflow:hidden; */
+}
+.nav-main h1 {
+    margin-top: 0.36rem;
+    margin-bottom: 0.36rem;
+}
+.nav-main .nav-main__nav-links ul {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
 }
