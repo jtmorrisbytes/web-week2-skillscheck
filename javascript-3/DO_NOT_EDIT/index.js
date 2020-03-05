@@ -5,8 +5,7 @@ const title = document.getElementById('grocery-list-title');
 const groceryStatus = document.getElementById('grocery-status')
 
 title.innerText = setGroceryListTitle(yourName);
-addItemBtn.addEventListener('click', () => addItem(groceryInput.value));
-
+addItemBtn.addEventListener('click', () => {addItem(groceryInput.value); displayData()});
 function displayData() {
   groceryStatus.innerText = checkGroceryCount()
   groceryList.innerHTML = ''
