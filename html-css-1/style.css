@@ -14,7 +14,7 @@ html {
 .nav-main {
     width:100%;
     background-color: rgb(122, 122, 122);
-    padding-left: 2em;
+    padding-left: 2rem;
     color:white;
     overflow: unset;
     display: flex;
@@ -39,12 +39,12 @@ html {
 }
 
 body > main {
-    height: calc(100vh - 3.125em);
+    height: calc(100vh - 3.125rem);
     overflow:auto;
 
 }
 body > main > section.jumbotron {
-    height: 20em;
+    height: 20rem;
     padding:0;
     background-color: black;
     display: flex;
@@ -55,18 +55,48 @@ body > main > section.jumbotron h2.jumbotron__text {
  padding:0;
  margin:0;
  color: rgb(223,224,95);
- font-size: 6em;
+ font-size: 6rem;
  font-weight: normal;
  font-family: 'Piston Pressure','Courier New', Courier, monospace;
  text-align: center;
 }
 
 .content-container{
-    padding:3em;
+    padding:3rem;
+}
+.content-container .row.boxes {
+    display: flex;
+    justify-content: space-around;
+}
+.row {
+    /* margin-bottom: ; */
 }
 .box {
     display: inline-block;
-    width: 12em;
-    height: 12em;
+    width: 22.75vw;
+    height: 22.75vmin;
+    max-height: 30em;
+    max-width: 30rem;
+    /* max-width: 15em; */
+    margin:0;
+    border-radius: 1.5rem;
     background-color: rgb(164, 255, 215);
 }
+
+/* reset rectangle styles */
+.rectangle.left, .rectangle.right {
+   margin:0
+}
+.row.rectangles {
+    display: flex;
+    justify-content: space-around;
+
+}
+.rectangle {
+    background-color: rgb(255, 192, 108);
+    width:40vw;
+    height: 20vmin;
+    
+}
+
+

@@ -58,3 +58,28 @@ body > main > section.jumbotron {
 .content-container .container {
 
 }
+.box {
+    margin-right: 2.75rem;
+    margin-left: 2.75rem;
+    width: 15rem;
+    height: 15rem;
+}
+.row {
+    margin-bottom: 2.5rem;
+}
+.row.boxes {
+}
+.rectangle {
+   width: 28em;
+   height: 14rem;
+   /* margin-left: 10em; */;
+   display: inline-block; 
+}
+.rectangle.left {
+    margin-left: 5%;
+    margin-right: 1%;
+}
+.rectangle.right {
+    margin-left: 1%;
+    margin-right: auto;
+}
