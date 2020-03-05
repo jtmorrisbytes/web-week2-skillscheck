@@ -66,7 +66,7 @@ body > main > section.jumbotron h2.jumbotron__text {
 }
 .content-container .row.boxes {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 .row {
     /* margin-bottom: ; */
@@ -89,7 +89,7 @@ body > main > section.jumbotron h2.jumbotron__text {
 }
 .row.rectangles {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 
 }
 .rectangle {
@@ -98,5 +98,11 @@ body > main > section.jumbotron h2.jumbotron__text {
     height: 20vmin;
     
 }
+.row.para-image {
+    display: flex;
+    justify-content: space-around;
+}
 
-
+.row.para-image * {
+    width: 40%;
+}
